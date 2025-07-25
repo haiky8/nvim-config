@@ -1,9 +1,13 @@
-**This repo is supposed to be used as config by NvChad users!**
+# ¿De qué va esta vaina?
+Estos son *savedatas* de mi configuración de **Nvim**. Ningún secreto hay aquí.
+- Plugins
+- Keymaps
+- Notas
+- etc
+> [!NOTE]
+> recordar hacer *push* de vez en cuando.
+> `git push -u origin main`
 
-- The main nvchad repo (NvChad/NvChad) is used as a plugin by this repo.
-- So you just import its modules , like `require "nvchad.options" , require "nvchad.mappings"`
-- So you can delete the .git from this repo ( when you clone it locally ) or fork it :)
+> [!TODO]
+> - [ ] instalar marksman
 
-# Credits
-
-1) Lazyvim starter https://github.com/LazyVim/starter as nvchad's starter was inspired by Lazyvim's . It made a lot of things easier!
