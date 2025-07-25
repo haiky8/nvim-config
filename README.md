@@ -8,6 +8,6 @@ Estos son *savedatas* de mi configuración de **Nvim**. Ningún secreto hay aqu�
 > recordar hacer *push* de vez en cuando.
 > `git push -u origin main`
 
-> [!TODO]
+> [!TO-DO]
 > - [ ] instalar marksman
 
