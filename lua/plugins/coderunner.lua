@@ -11,9 +11,6 @@ return {
        },
       }
     end,
-    keys = {
-      { "<leader>rr", "<cmd>RunCode<cr>", desc = "Run Code" },
-    },
   }
 }
 

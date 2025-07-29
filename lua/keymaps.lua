@@ -1,11 +1,19 @@
--- Generar/actualizar TOC
-vim.keymap.set("n", "<leader>mt", ":GenTocMarkdown<CR>", { desc = "Markdown: Generar TOC" })
+local keymap = vim.keymap
+local uv = vim.uv
 
--- Alternar listas con bullets.vim
-vim.keymap.set("n", "<leader>mb", ":ToggleCheckbox<CR>", { desc = "Markdown: Toggle checkbox" })
+keymap.set("n", "<leader>t", "<cmd>NvimTreeToggle<cr>", {desc = "[T]ree"})
 
--- Snippets (ej: escribir "table" + Tab para una tabla)
-require("luasnip").config.setup({
-  history = true,
-  updateevents = "TextChanged,TextChangedI",
+keymap.set("x", "<", "<gv")
+keymap.set("x", ">", ">gv")
+
+keymap.set("n", "<leader>so", "<cmd>Telescope vim_options<cr>", {desc = "[S]earch [o]ptions"})
+keymap.set("n", "<leader>ss", "<cmd>Telescope symbols<cr>", {desc = "[S]earch [s]ymbols"})
+keymap.set("n", "<leader>sf", "<cmd>Telescope find_files<cr>", {desc = "[S]earch [f]iles"})
+keymap.set("n", "<leader>sg", "<cmd>Telescope live_grep<cr>", {desc = "[S]earch [g]rep"})
+
+keymap.set("n", "<leader>sr", "<cmd>Spectre<cr>", {desc = "[S]earch & [r]eplace"})
+
+keymap.set("n", "<leader>r", "<cmd>RunFile<cr>", {desc = "Code [R]un"})
+require("which-key").add({
+	{"<leader>s", group="Search"},
 })
